@@ -1,0 +1,20 @@
+{
+  "name": "punches-lab-website",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Punches Research Lab — Static website (Ghost → GitHub Pages)",
+  "scripts": {
+    "ghost:install": "ghost install local --dir ghost --no-setup-linux-user",
+    "ghost:start": "ghost start --dir ghost",
+    "ghost:stop": "ghost stop --dir ghost",
+    "ghost:open": "open http://localhost:2368/ghost",
+    "export": "bash scripts/export.sh",
+    "preview": "npx serve docs -l 4000"
+  },
+  "devDependencies": {
+    "ghost-cli": "^1.26.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
